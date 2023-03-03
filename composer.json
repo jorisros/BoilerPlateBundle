@@ -1,6 +1,8 @@
 {
   "name": "jorisros/boilerplate-bundle",
   "type": "symfony-bundle",
+  "homepage": "https://github.com/jorisros/BoilerPlateBundle",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "JorisRos\\BoilerPlateBundle\\": "src/"

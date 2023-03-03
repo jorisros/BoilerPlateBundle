@@ -1,3 +1,4 @@
 services:
   jorisros.service.example:
     class: JorisRos\BoilerPlateBundle\Service\Example
+    public: true

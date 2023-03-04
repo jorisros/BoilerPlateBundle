@@ -33,3 +33,9 @@ Information for Service "jorisros.service.example"
  ---------------- --------------------------------------------
  ```
  Then the bundle is succesful installed.
+
+## Tests
+Run the tests as followed
+```
+php vendor/bin/phpunit tests
+```

@@ -2,6 +2,8 @@
 
 namespace JorisRos\BoilerPlateBundle\Tests\Service;
 
+require_once(__DIR__ . '/../../vendor/autoload.php');
+
 use JorisRos\BoilerPlateBundle\Service\Example;
 use PHPUnit\Framework\TestCase;
 

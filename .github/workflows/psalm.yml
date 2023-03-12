@@ -1,0 +1,24 @@
+name: Integration
+
+on: [push]
+
+jobs:
+  psalm:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+        php-versions: ['8.1','8.2']
+    name: PHP ${{ matrix.php-versions }} Test on ${{ matrix.operating-system }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Run psalm
+        run: ./vendor/bin/psalm --output-format=github

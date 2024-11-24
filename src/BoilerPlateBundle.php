@@ -14,6 +14,6 @@ class BoilerPlateBundle extends Bundle
             return new BoilerPlateBundleExtension();
         }
 
-        return $this->extension;
+        return $this->extension ?: null;
     }
 }
